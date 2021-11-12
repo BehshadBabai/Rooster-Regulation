@@ -29,7 +29,7 @@ This program is written to showcase basic knowledge of testing apps in node.js u
 
 
 ## Screenshots
-![Example screenshot](./img/Screenshot.png)
+![Example screenshot](./Screenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
