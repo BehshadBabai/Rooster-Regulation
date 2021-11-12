@@ -12,4 +12,25 @@ describe('Rooster', () => {
             assert.strictEqual(actual, expected);
         });
     });
+    describe('.timeAtDawn', () => {
+        it('returns its argument as a string for valid argument', () => {
+            // Define expected output
+            const expected = '9';
+            // Evaluating actual result
+            const actual = rooster.timeAtDawn(9);
+            // Assert Verification
+            assert.strictEqual(actual, expected);
+        });
+        it('throws an error if passed a negative number', () => {
+            assert.throws(() => {
+                rooster.timeAtDawn(-1);
+            }, RangeError);
+        });
+
+        it('throws an error if passed a number more than 23', () => {
+            assert.throws(() => {
+                rooster.timeAtDawn(25);
+            }, RangeError);
+        });
+    });
 });
